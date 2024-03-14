@@ -3,10 +3,11 @@ package tasks.model;
 
 
 import org.apache.log4j.Logger;
+import tasks.repository.TaskList;
 
 import java.util.*;
 
-public class ArrayTaskList extends TaskList{
+public class ArrayTaskList extends TaskList {
 
     private Task[] tasks;
     private int numberOfTasks;
@@ -96,10 +97,10 @@ public class ArrayTaskList extends TaskList{
 
     @Override
     public List<Task> getAll() {
-        ArrayList<Task> tks=new ArrayList<>();
+        ArrayList<Task> tasks=new ArrayList<>();
         for (int i=0; i<this.numberOfTasks;i++)
-            tks.add(this.tasks[i]);
-        return tks;
+            tasks.add(this.tasks[i]);
+        return tasks;
     }
 
     @Override

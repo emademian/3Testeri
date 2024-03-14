@@ -4,7 +4,7 @@ import javafx.collections.ObservableList;
 import org.apache.log4j.Logger;
 import tasks.model.LinkedTaskList;
 import tasks.model.Task;
-import tasks.model.TaskList;
+import tasks.repository.TaskList;
 import tasks.view.Main;
 
 import java.io.*;

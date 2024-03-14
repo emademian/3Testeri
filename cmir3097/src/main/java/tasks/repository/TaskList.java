@@ -1,4 +1,8 @@
-package tasks.model;
+package tasks.repository;
+
+import tasks.model.ArrayTaskList;
+import tasks.model.LinkedTaskList;
+import tasks.model.Task;
 
 import java.io.Serializable;
 import java.util.Date;
