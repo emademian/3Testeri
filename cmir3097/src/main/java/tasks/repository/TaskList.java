@@ -1,12 +1,13 @@
 package tasks.repository;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import tasks.model.ArrayTaskList;
 import tasks.model.LinkedTaskList;
 import tasks.model.Task;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
 
 public abstract class TaskList implements Iterable<Task>, Serializable  {
@@ -16,8 +17,7 @@ public abstract class TaskList implements Iterable<Task>, Serializable  {
     public abstract Task getTask(int index);
     public abstract List<Task> getAll();
 
-    public abstract Iterator<Task> iterator();
-
+    private static Logger logger = LogManager.getLogger(TaskList.class);
     public TaskList incoming(Date from, Date to){
         TaskList incomingTasks;
         if (this instanceof ArrayTaskList){
@@ -30,7 +30,7 @@ public abstract class TaskList implements Iterable<Task>, Serializable  {
         for(int i = 0; i < this.size(); i++){
             if(getTask(i).nextTimeAfter(from) != null && getTask(i).nextTimeAfter(from).before(to)){
                 incomingTasks.add(getTask(i));
-                System.out.println(getTask(i).getTitle());
+               logger.info(getTask(i).getTitle());
             }
         }
         return incomingTasks;
