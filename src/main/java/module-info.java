@@ -13,4 +13,7 @@ module tasks {
     exports tasks.controller;
     exports tasks.repository;
     opens tasks.repository to javafx.base;
+    exports tasks.services;
+
+//    opens test.java.tasks.blackbox to javafx.base;
 }
