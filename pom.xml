@@ -112,16 +112,16 @@
         <artifactId>maven-resources-plugin</artifactId>
         <version>3.0.2</version>
       </plugin>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
+<!--      <plugin>-->
+<!--        <artifactId>maven-compiler-plugin</artifactId>-->
 <!--        <version>3.8.0</version>-->
-<!--        <configuration>-->
-<!--          <encoding>UTF-8</encoding>-->
-<!--          <source>1.9</source>-->
-<!--          <target>1.9</target>-->
-<!--        </configuration>-->
-      </plugin>
+<!--&lt;!&ndash;        <version>3.8.0</version>&ndash;&gt;-->
+<!--&lt;!&ndash;        <configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;          <encoding>UTF-8</encoding>&ndash;&gt;-->
+<!--&lt;!&ndash;          <source>1.9</source>&ndash;&gt;-->
+<!--&lt;!&ndash;          <target>1.9</target>&ndash;&gt;-->
+<!--&lt;!&ndash;        </configuration>&ndash;&gt;-->
+<!--      </plugin>-->
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.1</version>
