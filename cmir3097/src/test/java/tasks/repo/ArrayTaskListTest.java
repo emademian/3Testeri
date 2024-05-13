@@ -1,9 +1,11 @@
-package tasks.model;
+package tasks.repo;
 
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import tasks.model.ArrayTaskList;
+import tasks.model.Task;
 
 import java.util.Date;
 
@@ -29,6 +31,18 @@ class ArrayTaskListTest {
         // arrange
         atl.add(new Task("task42", date));
         Task task = null;
+
+        // act
+        boolean result = atl.remove(task);
+
+        // assert
+        assertFalse(result);
+    }
+
+    @Test
+    public void testRemove_TaskNotFound_ReturnsFalse() {
+        // arrange
+        Task task = new Task("taskblabla", date);
 
         // act
         boolean result = atl.remove(task);

@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import tasks.model.ArrayTaskList;
 import tasks.model.Task;
+import tasks.repository.TaskList;
 
 import java.util.*;
 
@@ -83,5 +84,17 @@ public class TasksService {
             }
         }
         return calendar;
+    }
+
+    public void addTask(Task task) {
+        tasks.add(task);
+    }
+
+    public boolean removeTask(Task task) {
+        return tasks.remove(task);
+    }
+
+    public List<Task> getAllTasks() {
+        return tasks.getAll();
     }
 }

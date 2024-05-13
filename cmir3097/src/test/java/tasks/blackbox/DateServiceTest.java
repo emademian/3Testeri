@@ -1,8 +1,10 @@
-package tasks.services;
+package tasks.blackbox;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
+import tasks.services.DateService;
+import tasks.services.TasksService;
 
 import java.util.Calendar;
 import java.util.Date;
