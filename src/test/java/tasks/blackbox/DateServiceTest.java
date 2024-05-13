@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.mock;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-class DateServiceTest {
+public class DateServiceTest {
     private DateService dateService;
     @BeforeEach
     void setUp() {

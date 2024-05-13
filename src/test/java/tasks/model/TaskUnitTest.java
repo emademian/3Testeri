@@ -8,7 +8,7 @@ import java.util.GregorianCalendar;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class TaskUnitTest {
+public class TaskUnitTest {
     @Test
     public void testCreateTask() {
         // arrange

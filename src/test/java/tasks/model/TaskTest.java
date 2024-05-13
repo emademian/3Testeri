@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.text.ParseException;
 
-class TaskTest {
+public class TaskTest {
 
     private Task task;
 
