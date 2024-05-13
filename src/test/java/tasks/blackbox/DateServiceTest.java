@@ -18,13 +18,13 @@ import static org.mockito.Mockito.mock;
 public class DateServiceTest {
     private DateService dateService;
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         TasksService mockTasksService = mock(TasksService.class);
         dateService = new DateService(mockTasksService);
     }
 
     @AfterEach
-    void tearDown() {
+    public void tearDown() {
     }
 
     @Order(1)
